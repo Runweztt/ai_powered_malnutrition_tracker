@@ -23,12 +23,12 @@ Your Body Mass Index is calculated using the standard WHO formula:
 
 Your result is then classified into one of four categories:
 
-| Classification | BMI Range     |
-|----------------|---------------|
-| Underweight    | Below 18.5    |
-| Normal         | 18.5 – 24.9   |
-| Overweight     | 25.0 – 29.9   |
-| Obese          | 30.0 and above|
+| Classification | BMI Range      |
+|----------------|----------------|
+| Underweight    | Below 18.5     |
+| Normal         | 18.5 – 24.9    |
+| Overweight     | 25.0 – 29.9    |
+| Obese          | 30.0 and above |
 
 **3. Calorie target**
 Based on your BMI classification, age, gender, and activity level, the program
@@ -58,6 +58,7 @@ multiple sessions. You can also export your session summary to a `.txt` file.
 ## Project structure
 ```
 malnutrition_tracker/
+├── run.sh                  ← start the app with this
 ├── main.py                 ← entry point, runs the app
 ├── config/settings.py      ← loads environment variables
 ├── app/
@@ -78,7 +79,7 @@ malnutrition_tracker/
 
 ---
 
-## Setup
+## Setup and running the app
 
 ### 1. Clone the repo
 ```bash
@@ -86,19 +87,7 @@ git clone https://github.com/Runweztt/malnutrition_tracker.git
 cd malnutrition_tracker
 ```
 
-### 2. Create a virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate        # Mac / Linux
-venv\Scripts\activate           # Windows
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure environment variables
+### 2. Configure environment variables
 ```bash
 cp .env.example .env
 ```
@@ -111,15 +100,24 @@ DB_NAME=malnutrition_tracker
 ANTHROPIC_API_KEY=your_api_key_here
 ```
 
-### 5. Set up the database
+### 3. Set up the database
 ```bash
 mysql -u your_user -p < database/schema.sql
 ```
 
-### 6. Run the app
+### 4. Run the app
 ```bash
-python main.py
+bash run.sh
 ```
+
+That is all. The script handles everything else automatically:
+- Creates and activates the virtual environment
+- Installs all dependencies from `requirements.txt`
+- Checks the database connection before launching
+- Starts the program
+
+> **Note:** If `.env` is missing when you run `bash run.sh`, the script will
+> create it from `.env.example` and ask you to fill it in before running again.
 
 ---
 
