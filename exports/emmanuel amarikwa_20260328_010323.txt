@@ -1,0 +1,41 @@
+============================================================
+  MALNUTRITION TRACKER — SESSION REPORT
+============================================================
+  Name           : emmanuel amarikwa
+  Age            : 24
+  Gender         : male
+  Activity level : moderate
+  Height         : 56.0 cm
+  Weight         : 70.0 kg
+
+  BMI            : 223.21
+  Classification : Obese
+  Calorie target : 1794 kcal/day
+
+============================================================
+  DIET PLAN
+============================================================
+
+  [Offline plan]  Daily target: 1794 kcal
+
+GOAL: Sustained weight loss through structured calorie deficit.
+      Consult a healthcare provider before making major dietary changes.
+
+Macronutrient split:  Carbs 35%  |  Protein 35%  |  Fats 30%
+
+Sample meal plan:
+  Breakfast : Boiled eggs with cucumber slices and unsweetened herbal tea
+  Snack 1   : Small handful of walnuts
+  Lunch     : Grilled fish with a large portion of steamed vegetables
+  Snack 2   : Low-fat cottage cheese with sliced tomatoes
+  Dinner    : Baked chicken or tofu, roasted cauliflower, small salad
+
+Prioritise : Non-starchy vegetables, high-protein low-fat foods, fibre
+Avoid      : All sugary beverages, processed and packaged foods, high-fat dairy
+Hydration  : 3.0 litres of water daily — replace all sugary drinks immediately
+Tip        : Start with low-impact activity such as walking or swimming
+             for 20–30 minutes daily. Consider a dietitian for a supervised plan.
+
+
+  Generated: 2026-03-28 01:03:23
+============================================================
