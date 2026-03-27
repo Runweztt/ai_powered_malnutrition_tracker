@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# run.sh
-# AI-Powered Malnutrition Tracker — startup script
-# Run this from the project root: bash run.sh
-
 set -e
 
 

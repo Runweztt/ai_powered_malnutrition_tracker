@@ -6,8 +6,8 @@ import os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-from fallback_diet import get_fallback_diet_plan
-from ai_diet import generate_diet_plan
+from app.fallback_diet import get_fallback_diet_plan
+from app.ai_diet import generate_diet_plan
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -124,19 +124,19 @@ class TestGenerateDietPlan(unittest.TestCase):
         mock_client.messages.create.return_value = mock_msg
         return mock_client
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_successful_api_call_returns_dict(self, mock_anthropic):
         mock_anthropic.return_value = self._mock_client()
         plan = generate_diet_plan(_SAMPLE_PROFILE)
         self.assertIsInstance(plan, dict)
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_source_is_claude_ai_on_success(self, mock_anthropic):
         mock_anthropic.return_value = self._mock_client()
         plan = generate_diet_plan(_SAMPLE_PROFILE)
         self.assertEqual(plan["source"], "Claude AI")
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_macros_parsed_correctly(self, mock_anthropic):
         mock_anthropic.return_value = self._mock_client()
         plan = generate_diet_plan(_SAMPLE_PROFILE)
@@ -144,19 +144,19 @@ class TestGenerateDietPlan(unittest.TestCase):
         self.assertEqual(plan["macros"]["protein"], "30%")
         self.assertEqual(plan["macros"]["fats"], "25%")
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_five_meals_parsed(self, mock_anthropic):
         mock_anthropic.return_value = self._mock_client()
         plan = generate_diet_plan(_SAMPLE_PROFILE)
         self.assertEqual(len(plan["meals"]), 5)
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_prioritise_list_not_empty(self, mock_anthropic):
         mock_anthropic.return_value = self._mock_client()
         plan = generate_diet_plan(_SAMPLE_PROFILE)
         self.assertGreater(len(plan["prioritise"]), 0)
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_api_connection_error_falls_back(self, mock_anthropic):
         import anthropic as anthropic_lib
         mock_anthropic.return_value.messages.create.side_effect = (
@@ -165,7 +165,7 @@ class TestGenerateDietPlan(unittest.TestCase):
         plan = generate_diet_plan(_SAMPLE_PROFILE)
         self.assertEqual(plan["source"], "Offline Fallback")
 
-    @patch("ai_diet.anthropic.Anthropic")
+    @patch("app.ai_diet.Anthropic")
     def test_auth_error_falls_back(self, mock_anthropic):
         import anthropic as anthropic_lib
         mock_anthropic.return_value.messages.create.side_effect = (

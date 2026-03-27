@@ -1,4 +1,5 @@
 import anthropic
+from anthropic import Anthropic
 from config.settings import ANTHROPIC_API_KEY
 from app.fallback_diet import get_fallback_diet_plan
 
@@ -8,7 +9,7 @@ def generate_diet_plan(user_profile: dict) -> dict:
     prompt = _build_prompt(user_profile)
 
     try:
-        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        client = Anthropic(api_key=ANTHROPIC_API_KEY)
 
         message = client.messages.create(
             model="claude-opus-4-5",
@@ -23,7 +24,7 @@ def generate_diet_plan(user_profile: dict) -> dict:
 
         raw_text = message.content[0].text
         return _parse_diet_response(raw_text, user_profile["daily_calorie_target"])
-
+    
     except anthropic.APIConnectionError:
         print("\n[!] Could not reach the Claude API. Using offline diet plan.\n")
         return get_fallback_diet_plan(user_profile["bmi_classification"])
