@@ -2,8 +2,8 @@
 
 A command-line Python application that helps users assess their nutritional
 status and receive personalised diet recommendations powered by the Anthropic
-Claude AI. All session data is stored in a MySQL database for progress tracking
-over time.
+Claude AI. All session data is stored in Supabase (PostgreSQL) for progress
+tracking over time.
 
 ---
 
@@ -48,7 +48,7 @@ If the API is unavailable, the program automatically falls back to a built-in
 offline diet plan based on your BMI classification.
 
 **5. Progress tracking**
-Your session (profile, BMI, and diet plan) is saved to the MySQL database.
+Your session (profile, BMI, and diet plan) is saved to Supabase.
 Each time you run the program again under the same name, your BMI history is
 loaded and displayed as a trend table so you can monitor your progress over
 multiple sessions. You can also export your session summary to a `.txt` file.
@@ -70,12 +70,20 @@ malnutrition_tracker/
 │   ├── display.py          ← terminal output formatting
 │   └── reports.py          ← progress report and .txt export
 ├── database/
-│   ├── db_connect.py       ← MySQL connection
+│   ├── db_connect.py       ← Supabase client connection
 │   ├── queries.py          ← save and load session data
-│   ├── schema.sql          ← database table definitions
-│   └── seed.sql            ← sample data for testing
+│   ├── schema.sql          ← database table definitions (run in Supabase dashboard)
+│   └── seed.sql            ← sample test data (run in Supabase dashboard)
 └── tests/                  ← unit tests for all modules
 ```
+
+---
+
+## Requirements
+
+- Python 3.9 or higher
+- A Supabase account and project — https://supabase.com
+- An Anthropic API key — https://console.anthropic.com
 
 ---
 
@@ -83,41 +91,49 @@ malnutrition_tracker/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/Runweztt/malnutrition_tracker.git
-cd malnutrition_tracker
+git clone https://github.com/Runweztt/ai_powered_malnutrition_tracker.git
+cd ai_powered_malnutrition_tracker
 ```
 
-### 2. Configure environment variables
-```bash
-cp .env.example .env
+### 2. Set up the Supabase database
+- Go to your Supabase dashboard → SQL Editor
+- Run the contents of `database/schema.sql` to create the tables
+- Optionally run `database/seed.sql` to load sample test data
+
+### 3. Create your .env file
+Create a file called `.env` in the project root with the following:
 ```
-Edit `.env` and fill in your values:
-```
-DB_HOST=localhost
-DB_USER=your_mysql_username
-DB_PASS=your_mysql_password
-DB_NAME=malnutrition_tracker
-ANTHROPIC_API_KEY=your_api_key_here
+SUPABASE_URL=https://your-project-id.supabase.co
+SUPABASE_KEY=your_supabase_publishable_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
 ```
 
-### 3. Set up the database
-```bash
-mysql -u your_user -p < database/schema.sql
-```
+You get `SUPABASE_URL` and `SUPABASE_KEY` from your Supabase dashboard
+under **Settings → API**.
 
 ### 4. Run the app
 ```bash
 bash run.sh
 ```
 
-That is all. The script handles everything else automatically:
+The script handles everything else automatically:
 - Creates and activates the virtual environment
-- Installs all dependencies from `requirements.txt`
-- Checks the database connection before launching
+- Installs all dependencies
+- Tests the Supabase connection
 - Starts the program
 
-> **Note:** If `.env` is missing when you run `bash run.sh`, the script will
-> create it from `.env.example` and ask you to fill it in before running again.
+---
+
+## Dependencies
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| anthropic | 0.25.0 | Claude AI API |
+| supabase | 2.3.4 | Supabase database client |
+| httpx | 0.24.1 | HTTP client |
+| gotrue | 1.3.1 | Supabase authentication |
+| python-dotenv | 1.0.1 | Load .env variables |
+| pytest | 8.1.1 | Unit testing |
 
 ---
 
@@ -131,9 +147,24 @@ That is all. The script handles everything else automatically:
 | M4     | feature/m4 | Database layer and schema             |
 | M5     | feature/m5 | Progress reporting and export         |
 
+Each member works only on their assigned files, pushes to their own branch,
+and opens a Pull Request to `main` when their piece is ready.
+A Pull Request must be reviewed and approved before it can be merged.
+
+---
+
+## Running tests
+```bash
+python3 -m unittest tests.test_bmi -v
+python3 -m unittest tests.test_inputs -v
+python3 -m unittest tests.test_db -v
+python3 -m unittest tests.test_reports -v
+```
+
 ---
 
 ## References
 - WHO Malnutrition: https://www.who.int/news-room/fact-sheets/detail/malnutrition
 - CDC BMI: https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html
 - Anthropic Claude API: https://docs.anthropic.com
+- Supabase Documentation: https://supabase.com/docs
