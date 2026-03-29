@@ -10,3 +10,7 @@ build/
 .venv/
 venv/
 member_5/exports/*.txt
+Python-3.8.18/
+Python-3.8.18.tgz
+venv/
+env/
