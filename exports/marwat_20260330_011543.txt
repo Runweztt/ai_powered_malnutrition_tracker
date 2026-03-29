@@ -1,0 +1,71 @@
+============================================================
+  MALNUTRITION TRACKER SESSION REPORT
+============================================================
+  Name           : marwat
+  Age            : 22
+  Gender         : female
+  Activity level : active
+  Height         : 170.0 cm
+  Weight         : 62.0 kg
+
+  BMI            : 21.45
+  Classification : Normal
+  Calorie target : 2225 kcal/day
+
+============================================================
+  DIET PLAN
+============================================================
+# Personalized Diet Plan for Marwat
+
+## 1. Macronutrient Split
+- **Carbohydrates:** 50% (278g daily)
+- **Protein:** 25% (139g daily) 
+- **Fats:** 25% (62g daily)
+
+## 2. Sample Daily Meal Plan
+
+### Breakfast (450 kcal)
+- 1 cup oatmeal with banana and 2 tbsp almonds
+- 1 cup low-fat milk
+
+### Morning Snack (200 kcal)
+- Greek yogurt (150g) with berries
+
+### Lunch (600 kcal)
+- Grilled chicken breast (150g)
+- 1 cup brown rice
+- Mixed vegetable salad with olive oil dressing
+
+### Afternoon Snack (225 kcal)
+- Whole grain toast with 2 tbsp peanut butter
+
+### Dinner (550 kcal)
+- Baked salmon (120g)
+- Sweet potato (medium)
+- Steamed broccoli and green beans
+
+### Evening Snack (200 kcal)
+- Mixed nuts (30g) and apple slices
+
+## 3. Top 5 Foods to Prioritise
+1. **Lean proteins** (chicken, fish, eggs, legumes)
+2. **Complex carbohydrates** (quinoa, brown rice, oats)
+3. **Leafy greens** (spinach, kale, arugula)
+4. **Healthy fats** (avocado, nuts, olive oil)
+5. **Seasonal fruits** (berries, citrus, apples)
+
+## 4. Top 3 Foods to Avoid
+1. **Processed snacks** (chips, cookies, candy)
+2. **Sugary beverages** (sodas, energy drinks, sweetened juices)
+3. **Fried foods** (deep-fried items, fast food)
+
+## 5. Daily Hydration Guideline
+- **Target:** 2.5-3 liters (10-12 cups) of water daily
+- Increase intake on workout days
+- Include herbal teas and water-rich foods
+
+## 6. Lifestyle Tip
+Since you're maintaining a healthy BMI, focus on **consistent meal timing** and eat every 3-4 hours to sustain energy levels for your active lifestyle. This will help optimize your metabolism and support your fitness goals.
+
+  Generated: 2026-03-30 01:15:43
+============================================================
