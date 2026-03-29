@@ -1,3 +1,4 @@
+
 # Unit tests for progress report display and session export.
 # sys.path.insert ensures the project root is on Python's path so that
 # imports like `from app.reports import ...` resolve correctly.
@@ -75,3 +76,4 @@ class TestExportSession(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

@@ -1,0 +1,66 @@
+============================================================
+  MALNUTRITION TRACKER — SESSION REPORT
+============================================================
+  Name           : kenneth john
+  Age            : 24
+  Gender         : male
+  Activity level : active
+  Height         : 167.63 cm
+  Weight         : 70.0 kg
+
+  BMI            : 24.91
+  Classification : Normal
+  Calorie target : 2553 kcal/day
+
+============================================================
+  DIET PLAN
+============================================================
+# Personalized Diet Plan for Kenneth John
+
+## 1. Macronutrient Split
+- **Carbohydrates**: 50% (319g) - Primary energy for active lifestyle
+- **Protein**: 25% (160g) - Muscle maintenance and recovery
+- **Fats**: 25% (71g) - Hormone production and nutrient absorption
+
+## 2. Sample Daily Meal Plan
+
+**Breakfast (550 kcal)**
+- 80g oats with 1 banana, 30g almonds, 1 tbsp honey
+
+**Mid-Morning Snack (200 kcal)**
+- Greek yogurt (150g) with berries
+
+**Lunch (700 kcal)**
+- Grilled chicken breast (150g) with quinoa (100g dry) and mixed vegetables
+
+**Afternoon Snack (250 kcal)**
+- Apple with 2 tbsp peanut butter
+
+**Dinner (650 kcal)**
+- Salmon fillet (150g), sweet potato (200g), steamed broccoli
+
+**Evening Snack (200 kcal)**
+- Protein smoothie with banana and milk
+
+## 3. Top 5 Foods to Prioritize
+1. **Lean proteins** (chicken, fish, eggs) - muscle maintenance
+2. **Whole grains** (oats, quinoa, brown rice) - sustained energy
+3. **Leafy greens** (spinach, kale) - micronutrient density
+4. **Berries** (blueberries, strawberries) - antioxidants
+5. **Nuts/seeds** (almonds, chia) - healthy fats
+
+## 4. Top 3 Foods to Avoid
+1. **Processed snacks** (chips, cookies) - empty calories
+2. **Sugary drinks** (sodas, energy drinks) - blood sugar spikes
+3. **Deep-fried foods** - excessive unhealthy fats
+
+## 5. Daily Hydration Guideline
+- **3-3.5 liters** of water daily
+- Extra 500-750ml during/after intense workouts
+- Monitor urine color (pale yellow indicates good hydration)
+
+## 6. Lifestyle Tip for Normal BMI
+**Maintain consistency over perfection** - Your healthy BMI shows good habits. Focus on meal timing around workouts and aim for 80% adherence to your plan rather than stressing about perfect execution daily.
+
+  Generated: 2026-03-28 01:08:08
+============================================================
