@@ -1,3 +1,14 @@
+# Unit tests for progress report display and session export.
+# sys.path.insert ensures the project root is on Python's path so that
+# imports like `from app.reports import ...` resolve correctly.
+#
+# TestProgressReport = tests display_progress_report() with empty, single,
+#                      and multi-session BMI histories.
+# TestExportSession  = tests _export_session() confirms file is created and
+#                      contains correct BMI data, cleans up after each test.
+#
+# Run: python -m pytest tests/test_reports.py -v
+
 import sys, os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
