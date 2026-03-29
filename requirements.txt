@@ -1,4 +1,1 @@
-anthropic 
-python-dotenv 
-pytest 
-mysql-connector-python
+
