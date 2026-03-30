@@ -69,3 +69,4 @@ def get_user_inputs():
         "weight_kg":      weight,
         "activity_level": activity
     }
+

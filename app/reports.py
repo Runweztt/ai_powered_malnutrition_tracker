@@ -7,6 +7,8 @@ EXPORTS_DIR = os.path.join(os.path.dirname(__file__), "..", "exports")
 def display_progress_report(history: list) -> None:
     if not history:
         print("\n  No previous sessions found.")
+  
+  
         return
 
     print("\n" + "=" * 60)

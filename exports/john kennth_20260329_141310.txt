@@ -1,0 +1,72 @@
+============================================================
+  MALNUTRITION TRACKER — SESSION REPORT
+============================================================
+  Name           : john kennth
+  Age            : 23
+  Gender         : male
+  Activity level : active
+  Height         : 167.44 cm
+  Weight         : 70.0 kg
+
+  BMI            : 24.97
+  Classification : Normal
+  Calorie target : 2562 kcal/day
+
+============================================================
+  DIET PLAN
+============================================================
+# Personalized Diet Plan for John Kenneth
+
+## 1. Macronutrient Split
+- **Carbohydrates**: 50% (320g) - 1,281 kcal
+- **Protein**: 25% (160g) - 641 kcal  
+- **Fats**: 25% (71g) - 640 kcal
+
+## 2. Sample Daily Meal Plan
+
+### Breakfast (550 kcal)
+- 1 cup oatmeal with banana and 2 tbsp almond butter
+- 1 cup low-fat milk
+
+### Mid-Morning Snack (300 kcal)
+- Greek yogurt (1 cup) with mixed berries and 1 tbsp honey
+
+### Lunch (650 kcal)
+- Grilled chicken breast (150g) with quinoa (1 cup cooked)
+- Mixed vegetable salad with olive oil dressing
+- 1 medium apple
+
+### Afternoon Snack (250 kcal)
+- Whole grain toast with avocado (½ medium)
+- 1 hard-boiled egg
+
+### Dinner (650 kcal)
+- Baked salmon (150g) with sweet potato (1 medium)
+- Steamed broccoli and green beans
+- Small mixed green salad
+
+### Evening Snack (162 kcal)
+- 30g mixed nuts (almonds, walnuts)
+
+## 3. Top 5 Foods to Prioritize
+1. **Lean proteins** (chicken, fish, eggs, Greek yogurt)
+2. **Complex carbohydrates** (quinoa, oats, sweet potatoes)
+3. **Healthy fats** (avocados, nuts, olive oil, fatty fish)
+4. **Leafy greens** (spinach, kale, arugula)
+5. **Fruits** (berries, bananas, apples)
+
+## 4. Top 3 Foods to Avoid
+1. **Processed/fast foods** (burgers, fries, packaged meals)
+2. **Sugary drinks** (sodas, energy drinks, fruit juices)
+3. **Refined sugars** (candy, pastries, cookies)
+
+## 5. Daily Hydration Guideline
+- **Target**: 3-3.5 liters (12-14 cups) of water daily
+- Increase by 500-750ml on intense workout days
+- Monitor urine color (pale yellow indicates good hydration)
+
+## 6. Lifestyle Tip for Normal BMI
+**Maintain your healthy weight** by incorporating strength training 2-3 times weekly alongside your current activity. Focus on building lean muscle mass to optimize your body composition while staying within your healthy BMI range.
+
+  Generated: 2026-03-29 14:13:10
+============================================================

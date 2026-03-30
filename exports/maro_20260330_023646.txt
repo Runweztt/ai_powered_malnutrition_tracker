@@ -1,0 +1,72 @@
+============================================================
+  MALNUTRITION TRACKER — SESSION REPORT
+============================================================
+  Name           : maro
+  Age            : 15
+  Gender         : male
+  Activity level : active
+  Height         : 167.0 cm
+  Weight         : 50.0 kg
+
+  BMI            : 17.93
+  Classification : Underweight
+  Calorie target : 3131 kcal/day
+
+============================================================
+  DIET PLAN
+============================================================
+# Personalized Diet Plan for Maro
+
+## 1. Macronutrient Split
+- **Carbohydrates**: 55% (1,722 kcal = 431g)
+- **Protein**: 20% (626 kcal = 157g)
+- **Fats**: 25% (783 kcal = 87g)
+
+## 2. Sample Daily Meal Plan
+
+**Breakfast (780 kcal)**
+- 2 slices whole grain toast with 2 tbsp peanut butter
+- 1 large banana
+- 1 glass whole milk (250ml)
+- 1 tbsp honey
+
+**Lunch (900 kcal)**
+- Chicken and avocado wrap (whole wheat tortilla, 150g grilled chicken, ½ avocado, lettuce, tomato)
+- 1 cup brown rice
+- 1 glass chocolate milk (250ml)
+
+**Dinner (950 kcal)**
+- 200g salmon fillet
+- 1.5 cups quinoa
+- Mixed vegetables sautéed in olive oil
+- Small mixed green salad with olive oil dressing
+
+**Snack 1 (250 kcal)**
+- Greek yogurt (200g) with granola (30g)
+
+**Snack 2 (251 kcal)**
+- Handful of mixed nuts and dried fruits
+- 1 medium apple
+
+## 3. Top 5 Foods to Prioritize
+1. **Lean proteins** (chicken, fish, eggs, legumes)
+2. **Healthy fats** (nuts, avocados, olive oil, fatty fish)
+3. **Complex carbohydrates** (quinoa, brown rice, oats)
+4. **Dairy products** (whole milk, Greek yogurt, cheese)
+5. **Calorie-dense fruits** (bananas, dates, dried fruits)
+
+## 4. Top 3 Foods to Avoid
+1. **Ultra-processed junk foods** (chips, candy, fast food)
+2. **Sugary drinks** (soda, energy drinks, fruit juices)
+3. **Refined white carbohydrates** (white bread, pastries, sugary cereals)
+
+## 5. Daily Hydration Guideline
+- **10-12 glasses (2.5-3 liters) of water daily**
+- Increase by 500ml for every hour of intense physical activity
+- Include milk and natural fruit smoothies as hydrating options
+
+## 6. Lifestyle Tip for Underweight BMI
+**Eat frequently and consistently**: Aim for 3 main meals plus 2-3 substantial snacks daily. Never skip meals, and consider eating every 2-3 hours to maximize caloric intake and support healthy weight gain during this crucial growth period.
+
+  Generated: 2026-03-30 02:36:46
+============================================================
